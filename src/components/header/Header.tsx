@@ -5,12 +5,15 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import logo from '../../assets/bookLogo.svg';
 
-export function Header() {
+
+export const Header = () => {
+
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{flexGrow: 1}}>
             <AppBar position="static" color={'transparent'}>
                 <Toolbar>
-                    <img src={logo} alt="BookLogo" style={{width: '40px', marginRight: '15px'}}/>
+                    <img src={logo} alt="BookLogo"
+                         style={{width: '60px', marginRight: '15px'}}/>
                     <Typography
                         variant="h6"
                     >
